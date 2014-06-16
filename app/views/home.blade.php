@@ -35,7 +35,7 @@
 				 		<div class="top_right">
 							<div class="login-area">
 								<div class="join-our-team">
-									Join with us.
+									Join us.
 								</div>
 							</div>
 				   		</div>
