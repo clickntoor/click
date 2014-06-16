@@ -1,0 +1,167 @@
+body{
+	color:42423E;
+	font-family: 'Open sans';
+}
+
+.home-inner{
+	height:677px;
+	
+}
+.home-image{
+	background:url('welcome.jpg') ;
+	background-repeat: no-repeat;
+	position:relative;
+	background-position: center;
+	background-size: cover;
+	
+}
+.mask{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(125,0,0,0.5));
+	position: relative;
+	height: 100%;
+}
+	
+.welcome-text{
+	position: 0 auto;
+	text-align: center;
+	color:white;
+	display: block;
+	margin:10%;
+
+}
+@mediascreen and (max-width: 320px){
+	font-size:3.0vmin;
+	text-align:center;
+
+}
+.img-rounded{
+	width:110px;
+	height:110px;
+	border-radius: 0px 0px 6px 6px ;
+	display: block;
+
+}
+
+.img-responsive{
+
+	border-radius: 0px 0px 6px 6px ;
+	display: block;
+
+}
+.logo{
+
+
+	-webkit-transition:0.15s ease-out background-color;
+	-webkit-property:background-color;
+	-webkit-duration:0.15s;
+	-webkit-timing-function:ease-out;
+	-webkit-delay:initial;
+	float: left;
+}
+
+.login-area{
+	margin-top:10px;
+	text-transform: uppercase;
+	float: right;
+}
+.join-our-team{
+	font-weight: 700;
+	margin: 4px;
+	border-color: white;
+	border-radius: 4px;
+	display: block;
+	float:right;
+	color: white;
+}
+.main-footer{
+	
+	background:#f0f0f0;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15) inset;
+	font-weight: 500;
+}
+.wrapper{
+	padding:2em 0;
+	width:93.96226%;
+	box-sizing:border-box;
+	margin:0 auto;
+	color:#4c4c4c;
+}
+.wrapper a{
+	color:#9B9999;
+		text-decoration: none;
+
+
+}
+.brand{
+	font:0/0 a;
+	width:110px;
+	height:100px;
+	margin:-160px 0 24px 0px;
+	margin-top: -160px;
+	margin-bottom: 24px;
+	margin-right: 0;
+	margin-left: 0;
+	position: 0 auto;
+	text-align: center;
+	background: url('transparentlogo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+z-index: 160px; 
+	
+	margin:0 auto;	
+
+	
+}
+.brandlogo{
+	
+
+ text-align: center;
+
+}
+ul.primary {
+	list-style: none;
+	display: block;
+	
+	
+	text-align: center;
+}
+ul.secondary{
+	list-style: none;
+	display:block;
+	
+	margin: 12px 0px;
+	text-align: center;
+}
+ul.primary  li{
+	margin: 12px 0px;
+	display: inline;
+	
+	font-size: 0.875;
+	padding:1.6em;
+}
+ul.secondary li{
+	margin: 12px 0px;
+	display: inline;
+
+	font-size: 0.875;
+	padding:1.6em;
+}
+.hp-login-wrapper {
+	height:500px;
+
+}
+.hp-add{
+	background-color: #DAD8D8;
+	text-align: center;
+}
+.hp-add-wrapper{
+	height:500px;
+}
+.hp-add-text{
+	font-size: 2.0em;
+	padding:3%;
+}
+.add-image{
+	pading:5%;
+}
