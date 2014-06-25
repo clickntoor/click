@@ -1,39 +1,117 @@
-/**
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any Css/Less files within this directory, lib/assets/javascripts, vendor/assets/javascripts,
- * can be referenced here using a relative path.
- *
- * It's not advisable to add code directly here, but if you do, it'll appear in whatever order it 
- * gets included (e.g. say you have require_tree . then the code will appear after all the directories 
- * but before any files alphabetically greater than 'application.css' 
- *
- *= require_tree .
- */
- h1{
-	
-}
-	
-.Welcome_text{
-	position: 0 auto;
-	text-align: center;
-	color:white;
-	display: block;
-	margin:15%;
-	
-}
-.welcome{
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(105,0,0,0.5)), url('welcome.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: block;
+#top {padding: 0;
+	border: none;
+	height: 6px;
+    margin: 0;
+    background-color: white;
+    border-bottom: 2px solid #2b2727} /** for top white line**/
+#bottom{margin: 0;border: none;
+  height: 2px; background-color: #242B33;}    /** for bottom line which passes over footer**/
+body {margin: 0;
+      background-color: #F0F0F0;
+            }
+.container-fluid {padding: 0;}
+.logo div {padding:0;} 
+#logo {border-bottom-right-radius: 5px 7px;
+       border-bottom-left-radius: 5px 7px;
+       z-index: 1000;
+       border: 2px solid #2b2727;
+       border-top: none;
+       position: relative;top: -2px;/** to place logo over the top white line border**/}
+#logo_anchor {padding-left: 80px;}
+.page1 {  background-color: #4D4D49;height:640px; display: block;background: linear-gradient(rgba(0,0,0,0.5),rgba(105,0,0,0.5)), url('welcome.jpg') center scroll;background-size: cover; }
+/**page1 is the visible content while home page is loaded**/
+h2 { position: absolute; top: 75px;
+     color: white;
+     text-align: center;
+     font-size: 4.5em;
+     padding: 0 !important;
+     text-shadow: -2px -2px 5px black;
+     text-shadow: 2px 2px 5px grey;
+     margin: 0 185px;
+     line-height: 60px;
+     font-family: "Corbel"}
+#nav-top {position: absolute;top: 15px; right: 150px;} /**navigation bar on top**/
+#nav-top li a{font-size: 1em; color: black; font-weight: bold; font-family: "Lao UI";  padding: 5px; text-align: center; padding-bottom: 2px;padding-top: 2px;text-decoration: none; }
 
+form {position: absolute;top: 375px;left: 0;right: 0;margin: auto; width: 500px;}
+footer {background-color: #2b2727; }
+footer ul li a {margin-right: 35px;color: #e8f4e9;font-family: arial;text-decoration: none; font-size: 1em;}
+#botlist a:hover {color:#6D6D67;text-decoration: none;}
+footer ul {text-align: center;padding-top: 50px;padding-bottom: 20px; margin: 0 200px !important;}
+footer ul li{padding-top: 15px;}
+#logo:hover {opacity: 0.95;}                 
+#page2 { background-color: #f0f0f0;height: 500px;} /**page2 includes img1 , unlock clickntoor , follow travellers around the globe**/
+#botlogo {position: relative;top: -50px;} /** to place logo exctly at the interface of page2 and footer**/
+#signup{text-align: center;font-size: 3.5em;margin-top: 30px;font-weight: 10; letter-spacing: 1px;font-family: "Microsoft Yi Baiti"} /** text saying unlock clickntoor**/
 
+#travellers{font-size: 2em; color: #95979A;font-family: "Segoe Script";font-size: 2.5em;} /**text saying follow travellers around the globe**/
+@media screen and (min-width: 100px) and (max-width: 620px)
+ {
+ 	#logo_anchor { position: absolute;top: 30px;left: 0;right: 0;padding: 0;margin: auto;}
+ 	#logo {position: absolute;left: 0;right: 0;padding: 0;margin: auto;border-radius: 5px 7px; border-top: 2px solid black;}
+  h2 {font-size: 3em;
+      position: absolute; top: 145px;
+      margin: 0 20px;
+      line-height: 40px;}
+      #nav-top{visibility: hidden;}
+  form {width: 280px;} 
+  footer ul{margin: 0 15px !important;}   
+ }
+
+#footlogo{position: absolute;left: 0; right: 0; margin-left: auto;margin-right: auto;z-index: 1000;border-left: 2px solid #DEDEDE;border: 2px solid #242B33; border-radius: 5px 7px;}
+.navbar {background-color: #2b2727; margin-bottom: 0;border: none;}
+.navbar-toggle{ padding-top: 11px; background-color: #3276B1;  }
+.navbar .navbar-header .icon-bar{background-color: white;} /** to change color of three bars in button in the nav-bar**/
+#botlist {border: none;}
+.navbar-header {border: none !important;}
+.navbar .navbar-header .navbar-toggle.btn:hover {background-color: #3276B1;border: none;} /**higher specificity given to over-ride bootstrap style rules**/
+.navbar .navbar-header .navbar-toggle.btn:focus {background-color: #3276B1;border: none;}
+.list-inline{float: none;}
+@media screen and (min-width: 621px) and (max-width: 970px)
+{
+    #logo_anchor { position: absolute;left: 5px; padding: 0;}
+     h2 {font-size: 3.5em;
+      position: absolute; top: 175px;
+      margin: 0 20px;
+      line-height: 40px;}
+    #nav-top {position: absolute;top: 15px; right: 15px;}
+    footer ul{margin: 0 15px !important;}
+}
+@media screen and (min-width: 420px) and (max-width: 620px)
+{
+  h2 {position: absolute;top: 175px;}
 }
 
-.logo_area{
-	margin:0px 0px 10px 25px;
-	border-radius: 10px;
+@media screen and (min-width: 100px) and (max-width: 970px)
+{
+  #follow {position: absolute;left: 0;right: 0; margin: auto; }
+  #travellers{position: absolute;left: 0;right: 0; margin: auto;text-align: center; margin-top: 220px;}
+  #signup{margin-top: 0; line-height: 45px;}
+}
+@media screen and (min-width: 971px) and (max-width: 1030px)
+{
+  #follow {margin-left: 20px;margin-top: 70px;}
+  #travellers {margin-right: 40px;margin-top: 150px;float: right;}
+}
+@media screen and (min-width: 1031px)
+{
+ #follow{margin-left: 80px;margin-top: 70px;} 
+ #travellers{font-size: 2em; color: #95979A;float: right;margin-top: 150px; margin-right: 75px;font-family: "Segoe Script";font-size: 2.5em; }
+}
+@media screen and (min-width: 100px) and (max-width: 375px)
+{
+  #page2 {height: 550px;}
+  #travellers {font-size: 2em;}
+  .list-inline li {text-align: left; margin-right: 70px; float: left;}
+  footer{overflow: auto;}
 }
 
+@media screen and (min-width: 100px) and (max-width: 767px)
+{
+.list-inline {padding-top: 5px !important; }
+.list-inline li {padding-top: 3px;padding-bottom: 2px;}
+}
+@media screen and (min-width: 376px) and (max-width: 500px)
+{
+  .list-inline li{width: 300px;text-align: left; }
+}

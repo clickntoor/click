@@ -21,100 +21,91 @@
 		<link rel="short cut" href="/ico/favicon.ico">
 		{{stylesheet_link_tag()}}
 		{{javascript_include_tag()}}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".navbar-toggle").click(function(){ 
+          $("#botlist").toggle(500);});
+         });
+    </script>
+
 </head>
 <body>
 	
-			<div class="home-inner home-image">
-				<div class="mask">
+	<hr id="top">
 
-				   <div class="container">
-				   		<div class="row">
-				   		<div class="col-md-12 col-xs-12 col-sm-12">
-				   		<div class="logo left">
-				   			<a href="/">{{HTML::image('assets/logobot.png','logo',array('class'=>'img-responsive'))}}</a>
-				 		<div class="top_right">
-							<div class="login-area">
-								<div class="join-our-team">
-									Join us.
-								</div>
-							</div>
-				   		</div>
-				   		</div>
-				   		</div>
-				   		<div class=" col-md-12 col-sm-12 col-xs-12 add-image">
-				   		<div class="welcome-text">
-				   			<h1>Discover the great places to hangout with your family and freinds around Bangalore  </h1>
-				   		</div>
-						</div>
-				   		</div>
-				   </div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="page1">
 
-		<div class="hp-add">
-			<div class="hp-add-wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<h2 class="hp-add-text">Sign up to unlock the clickntoor</h2>
-						</div> 
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							{{HTML::image('assets/img1.png','Follow Trusted Travellers',array('class'=>'img-responsive'))}}
-							<h4>Follow Travellers around the globe</h4>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	<div class="hp-login">
-		<div class="hp-login-wrapper">
-			
-		</div>
-	</div>
-	
-	<footer class="main-footer">
+	<div class="col-xs-1"></div>
+	<a href="#"  id="logo_anchor" ">{{HTML::image('assets/logobot.png','logo', array('id'=>'logo'))}}</a>
+  <ul class="list-inline" id="nav-top">
+    <li><a href="#">LOGIN</a></li>
+    <li><a href="#">SIGN UP</a></li>
+    <li><a href="#">JOIN OUR TEAM</a></li>
+  </ul>  
 
-	<div class="brand">
-					<a href="/" class="brandlogo">clickntoor</a>
-				</div>
-		<div class="wrapper">
-			
-			<div class="container">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-				
-			<nav>
-				<ul class="primary">
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Join our Team</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Business</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Advertise</a></li>
-					<li><a href="#">Partner</a></li>
-					<li><a href="#">Invest</a></li>
-				</ul>
-			
-				<ul class="secondary">
-					<li><a href="#">Privacy</a></li>
-					<li><a href="#">Sitemap</a></li>
-					<li><a href="#">Policies</a></li>
-					<li><a href="#">Add your College</a></li>
-				</ul>
+<div class="col-xs-12"><h2>Discover great places to hang around Bangalore </h2></div>
 
-			</nav>
-			</div></div>
-		</div>
-	</footer>
-	
+<form class="form-inline">
+       
+        <a href="#"><div class="input-group">
+          <input type="text" class="form-control input-lg" placeholder="Search...">
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-search"></span>
+          </div>
+        </div></a>
+       
+</form>
+
+</div>
+<div id="page2">
+  <p id="signup">Sign up to unlock Clickntoor</p>
+  {{HTML::image('assets/img1.png','logo', array('id'=>'follow'))}} <span id="travellers">follow travellers around the globe</span>
+</div>
+
+<div id="botlogo">
+<a href="#">{{HTML::image('assets/logobot.png','logo', array('id'=>'footlogo'))}}</a>
+</div>
+<hr id="bottom">
+<footer>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+     <a href="#gobottom"><button type="button" class="navbar-toggle btn btn-success" data-toggle="collapse" data-target="#botlist">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button></a>
+    </div>
+
+  
+      
+ <div class="collapse navbar-collapse" id="botlist">
+  <ul class="list-inline">
+    <li><a href="#">About us</a></li>
+    <li><a href="#">join our Team</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Advertise</a></li>
+    <li><a href="#">Partner</a></li>
+    <li><a href="#">Invest</a></li>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Sitemap</a></li>
+    <li><a href="#">Policies</a></li>
+    <li><a href="#">Add your College</a></li>
+  </div>
+  </ul>  
+  <div id="gobottom></div>
+</div>
+</nav>
+
+
+
+
+ 
+</footer>
+
 </body>
 </html>
