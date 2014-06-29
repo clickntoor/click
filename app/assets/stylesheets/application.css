@@ -35,10 +35,11 @@ h2 { position: absolute; top: 75px;
 
 form {position: absolute;top: 375px;left: 0;right: 0;margin: auto; width: 500px;}
 footer {background-color: #2b2727; }
-footer ul li a {margin-right: 35px;color: #e8f4e9;font-family: arial;text-decoration: none; font-size: 1em;}
+footer ul li a {margin-right: 30px;color: #e8f4e9;font-family: arial;text-decoration: none; font-size: 1em;}
 #botlist a:hover {color:#6D6D67;text-decoration: none;}
 footer ul {text-align: center;padding-top: 50px;padding-bottom: 20px; margin: 0 200px !important;}
 footer ul li{padding-top: 15px;}
+footer ul li a:hover {text-decoration: none;color: #6D6D67;}
 #logo:hover {opacity: 0.95;}                 
 #page2 { background-color: #f0f0f0;height: 500px;} /**page2 includes img1 , unlock clickntoor , follow travellers around the globe**/
 #botlogo {position: relative;top: -50px;} /** to place logo exctly at the interface of page2 and footer**/
@@ -59,14 +60,8 @@ footer ul li{padding-top: 15px;}
  }
 
 #footlogo{position: absolute;left: 0; right: 0; margin-left: auto;margin-right: auto;z-index: 1000;border-left: 2px solid #DEDEDE;border: 2px solid #242B33; border-radius: 5px 7px;}
-.navbar {background-color: #2b2727; margin-bottom: 0;border: none;}
-.navbar-toggle{ padding-top: 11px; background-color: #3276B1;  }
-.navbar .navbar-header .icon-bar{background-color: white;} /** to change color of three bars in button in the nav-bar**/
-#botlist {border: none;}
-.navbar-header {border: none !important;}
-.navbar .navbar-header .navbar-toggle.btn:hover {background-color: #3276B1;border: none;} /**higher specificity given to over-ride bootstrap style rules**/
-.navbar .navbar-header .navbar-toggle.btn:focus {background-color: #3276B1;border: none;}
-.list-inline{float: none;}
+
+.navbotoom {float: none;}
 @media screen and (min-width: 621px) and (max-width: 970px)
 {
     #logo_anchor { position: absolute;left: 5px; padding: 0;}
@@ -88,12 +83,12 @@ footer ul li{padding-top: 15px;}
   #travellers{position: absolute;left: 0;right: 0; margin: auto;text-align: center; margin-top: 220px;}
   #signup{margin-top: 0; line-height: 45px;}
 }
-@media screen and (min-width: 971px) and (max-width: 1030px)
+@media screen and (min-width: 971px) and (max-width: 1035px)
 {
   #follow {margin-left: 20px;margin-top: 70px;}
   #travellers {margin-right: 40px;margin-top: 150px;float: right;}
 }
-@media screen and (min-width: 1031px)
+@media screen and (min-width: 1036px)
 {
  #follow{margin-left: 80px;margin-top: 70px;} 
  #travellers{font-size: 2em; color: #95979A;float: right;margin-top: 150px; margin-right: 75px;font-family: "Segoe Script";font-size: 2.5em; }
@@ -101,17 +96,29 @@ footer ul li{padding-top: 15px;}
 @media screen and (min-width: 100px) and (max-width: 375px)
 {
   #page2 {height: 550px;}
+  
   #travellers {font-size: 2em;}
-  .list-inline li {text-align: left; margin-right: 70px; float: left;}
-  footer{overflow: auto;}
+  
+  .navbottom li {text-align: center; float: none;display: list-item;}
+.navbottom {position: absolute;left: 0;right: 0;margin: auto;}
+.navbottom li a { padding-top: 20px;margin-right: 0;} 
+footer{height: 380px;}
 }
 
 @media screen and (min-width: 100px) and (max-width: 767px)
 {
-.list-inline {padding-top: 5px !important; }
-.list-inline li {padding-top: 3px;padding-bottom: 2px;}
+
+.navbottom {padding-top: 60px !important; }
+.navbottom li {padding-top: 3px;padding-bottom: 2px;}
 }
 @media screen and (min-width: 376px) and (max-width: 500px)
 {
-  .list-inline li{width: 300px;text-align: left; }
+    .navbottom li {text-align: center; float: none;display: list-item;}
+.navbottom {position: absolute;left: 0;right: 0;margin: auto;}
+.navbottom li a { padding-top: 20px;margin-right: 0;} 
+footer{height: 380px;}
+}
+@media screen and (min-width: 965px) and (max-width: 1080px)
+{
+  footer .navbottom {margin-right: 50px !important;margin-left: 50px !important;}
 }

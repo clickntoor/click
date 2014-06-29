@@ -44,7 +44,7 @@
     <li><a href="#">JOIN OUR TEAM</a></li>
   </ul>  
 
-<div class="col-xs-12"><h2>Discover great places to hang around Bangalore </h2></div>
+<div class="col-xs-12"><h2>Discover great places to hang around your college </h2></div>
 
 <form class="form-inline">
        
@@ -69,20 +69,9 @@
 <hr id="bottom">
 <footer>
 
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-     <a href="#gobottom"><button type="button" class="navbar-toggle btn btn-success" data-toggle="collapse" data-target="#botlist">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button></a>
-    </div>
-
-  
       
- <div class="collapse navbar-collapse" id="botlist">
-  <ul class="list-inline">
+
+  <ul class="list-inline navbottom">
     <li><a href="#">About us</a></li>
     <li><a href="#">join our Team</a></li>
     <li><a href="#">Contact</a></li>
@@ -95,11 +84,9 @@
     <li><a href="#">Sitemap</a></li>
     <li><a href="#">Policies</a></li>
     <li><a href="#">Add your College</a></li>
-  </div>
+
   </ul>  
-  <div id="gobottom></div>
-</div>
-</nav>
+  <div id="gobottom">bbbb</div>
 
 
 
